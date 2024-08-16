@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4df03d624fa23f382d4208613f72dc46 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4df03d624fa23f382d4208613f72dc46" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4df03d624fa23f382d4208613f72dc46 = L.map(
+                "map_4df03d624fa23f382d4208613f72dc46",
+                {
+                    center: [28.7041, 77.1025],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_01b992b6fbcc7610c1d71c49b4b4351a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_01b992b6fbcc7610c1d71c49b4b4351a.addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var marker_5252ecb789e5126a7d0dc88d974f52a6 = L.marker(
+                [28.7041, 77.1025],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_05b08c8c1b2033e548599cae57c73963 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5252ecb789e5126a7d0dc88d974f52a6.setIcon(icon_05b08c8c1b2033e548599cae57c73963);
+        
+    
+        var popup_173de410d493360a577ded353912ab0e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_42d27c4844c260c9d6f29105d11591f3 = $(`<div id="html_42d27c4844c260c9d6f29105d11591f3" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-01 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-01 00:00:00<br>             <b>Location:</b> Border Post Alpha<br>             <b>Description:</b> High-resolution image showing vehicle movement<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-03-01 00:00:00<br>             <b>Source:</b> National News A<br>             <b>Title:</b> Border Tensions Increase<br>             <b>Summary:</b> Rising tensions between Country A and Country B as both nations increase military presence at the border.         </div>`)[0];
+                popup_173de410d493360a577ded353912ab0e.setContent(html_42d27c4844c260c9d6f29105d11591f3);
+            
+        
+
+        marker_5252ecb789e5126a7d0dc88d974f52a6.bindPopup(popup_173de410d493360a577ded353912ab0e)
+        ;
+
+        
+    
+    
+            var marker_e20b0a34c4374aa19f4b3b95c81cae76 = L.marker(
+                [28.7043, 77.1032],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_51ed9d922492ca422899860985f4a06c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e20b0a34c4374aa19f4b3b95c81cae76.setIcon(icon_51ed9d922492ca422899860985f4a06c);
+        
+    
+        var popup_1eba95da634b08d380687e6292b10e67 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32f84011a7247d801e0ac484de172bf9 = $(`<div id="html_32f84011a7247d801e0ac484de172bf9" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-05 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-05 00:00:00<br>             <b>Location:</b> Border Post Alpha<br>             <b>Description:</b> Image showing an empty area<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-03-05 00:00:00<br>             <b>Source:</b> Global Security<br>             <b>Title:</b> Diplomatic Talks Stalled<br>             <b>Summary:</b> Diplomatic talks between Country A and Country B have stalled over unresolved border disputes.         </div>`)[0];
+                popup_1eba95da634b08d380687e6292b10e67.setContent(html_32f84011a7247d801e0ac484de172bf9);
+            
+        
+
+        marker_e20b0a34c4374aa19f4b3b95c81cae76.bindPopup(popup_1eba95da634b08d380687e6292b10e67)
+        ;
+
+        
+    
+    
+            var marker_435eb30bacea90b26217ffbb7fedc81a = L.marker(
+                [28.7044, 77.1035],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_178da9b7d9e99bc1b69b1eccec76f02b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_435eb30bacea90b26217ffbb7fedc81a.setIcon(icon_178da9b7d9e99bc1b69b1eccec76f02b);
+        
+    
+        var popup_cf09efeb779a632de84f9cd432b2b3e9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_70f5fa419c078cb19181c42c05bf1d8c = $(`<div id="html_70f5fa419c078cb19181c42c05bf1d8c" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-07 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-07 00:00:00<br>             <b>Location:</b> Border Post Alpha<br>             <b>Description:</b> Image showing troop withdrawal<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-03-07 00:00:00<br>             <b>Source:</b> Border Watch<br>             <b>Title:</b> Escalation in Border Incidents<br>             <b>Summary:</b> Reports indicate an increase in cross-border incidents between Country A and Country B.         </div>`)[0];
+                popup_cf09efeb779a632de84f9cd432b2b3e9.setContent(html_70f5fa419c078cb19181c42c05bf1d8c);
+            
+        
+
+        marker_435eb30bacea90b26217ffbb7fedc81a.bindPopup(popup_cf09efeb779a632de84f9cd432b2b3e9)
+        ;
+
+        
+    
+    
+            var marker_c5b7c82f5a6c4743fc99c06488d554a5 = L.marker(
+                [28.7045, 77.1038],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_0fa2276625e85748d9bc4dc6611de441 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5b7c82f5a6c4743fc99c06488d554a5.setIcon(icon_0fa2276625e85748d9bc4dc6611de441);
+        
+    
+        var popup_3b81de63dd2137f7564b73fbb95dd3a4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1d4951f0d171ecc59bbedb7bc53574e2 = $(`<div id="html_1d4951f0d171ecc59bbedb7bc53574e2" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-09 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-09 00:00:00<br>             <b>Location:</b> Border Post Alpha<br>             <b>Description:</b> Image showing new infrastructure developments<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-03-09 00:00:00<br>             <b>Source:</b> Defense News<br>             <b>Title:</b> Troop Movement Observed<br>             <b>Summary:</b> Significant troop movements observed along the border between Country A and Country B.         </div>`)[0];
+                popup_3b81de63dd2137f7564b73fbb95dd3a4.setContent(html_1d4951f0d171ecc59bbedb7bc53574e2);
+            
+        
+
+        marker_c5b7c82f5a6c4743fc99c06488d554a5.bindPopup(popup_3b81de63dd2137f7564b73fbb95dd3a4)
+        ;
+
+        
+    
+    
+            var marker_f05bac5ece8fe4da5d24dcad59454273 = L.marker(
+                [28.7046, 77.104],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_7d41baecd9cc4f8817c420a93033dd16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f05bac5ece8fe4da5d24dcad59454273.setIcon(icon_7d41baecd9cc4f8817c420a93033dd16);
+        
+    
+        var popup_e0ff8f9c1696d9b409687da4a650da17 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_21880fea8cf34446c76d761e5e32d9fe = $(`<div id="html_21880fea8cf34446c76d761e5e32d9fe" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-12 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-12 00:00:00<br>             <b>Location:</b> Border Post Bravo<br>             <b>Description:</b> High-resolution image showing vehicle movement<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-12 00:00:00<br>             <b>Source:</b> National News B<br>             <b>Title:</b> Civilians Caught in Crossfire<br>             <b>Summary:</b> Civilians in border villages are caught in the crossfire as tensions escalate.         </div>`)[0];
+                popup_e0ff8f9c1696d9b409687da4a650da17.setContent(html_21880fea8cf34446c76d761e5e32d9fe);
+            
+        
+
+        marker_f05bac5ece8fe4da5d24dcad59454273.bindPopup(popup_e0ff8f9c1696d9b409687da4a650da17)
+        ;
+
+        
+    
+    
+            var marker_3c78377ff092c0c4df2a8134798a2113 = L.marker(
+                [28.7047, 77.1042],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_de5a4bdc8b69246fd0b0d081c4878121 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c78377ff092c0c4df2a8134798a2113.setIcon(icon_de5a4bdc8b69246fd0b0d081c4878121);
+        
+    
+        var popup_f69f214027bb447ecbd77e384f2b6cb0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e50893f92463136d822b89249ebbb1a4 = $(`<div id="html_e50893f92463136d822b89249ebbb1a4" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-14 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-14 00:00:00<br>             <b>Location:</b> Border Post Bravo<br>             <b>Description:</b> Image showing increased military presence<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-14 00:00:00<br>             <b>Source:</b> Global Times<br>             <b>Title:</b> Military Exercises in Border Regions<br>             <b>Summary:</b> Both Country A and Country B conduct large-scale military exercises near the disputed border.         </div>`)[0];
+                popup_f69f214027bb447ecbd77e384f2b6cb0.setContent(html_e50893f92463136d822b89249ebbb1a4);
+            
+        
+
+        marker_3c78377ff092c0c4df2a8134798a2113.bindPopup(popup_f69f214027bb447ecbd77e384f2b6cb0)
+        ;
+
+        
+    
+    
+            var marker_caed19f6f7c234fde007161585a4352e = L.marker(
+                [28.7048, 77.1045],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_3fead385b20a450d5add49425a6b4e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_caed19f6f7c234fde007161585a4352e.setIcon(icon_3fead385b20a450d5add49425a6b4e0a);
+        
+    
+        var popup_ba0f2accbe1a75a9b0ff5184f8402dab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c24e3312240f5826a95f87f45b9b3432 = $(`<div id="html_c24e3312240f5826a95f87f45b9b3432" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-17 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-17 00:00:00<br>             <b>Location:</b> Border Post Bravo<br>             <b>Description:</b> Image showing an empty area<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-17 00:00:00<br>             <b>Source:</b> Border News<br>             <b>Title:</b> Cross-Border Trade Halted<br>             <b>Summary:</b> Cross-border trade between Country A and Country B has been temporarily halted due to security concerns.         </div>`)[0];
+                popup_ba0f2accbe1a75a9b0ff5184f8402dab.setContent(html_c24e3312240f5826a95f87f45b9b3432);
+            
+        
+
+        marker_caed19f6f7c234fde007161585a4352e.bindPopup(popup_ba0f2accbe1a75a9b0ff5184f8402dab)
+        ;
+
+        
+    
+    
+            var marker_009a543acfc2cef56387b59729d3e89f = L.marker(
+                [28.7049, 77.1048],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_a64a24d16dbadd77a871f84b28e9f209 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_009a543acfc2cef56387b59729d3e89f.setIcon(icon_a64a24d16dbadd77a871f84b28e9f209);
+        
+    
+        var popup_266212344c49dd734713da0300a0df27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a555c7edaa1388e9f07583671d46fa14 = $(`<div id="html_a555c7edaa1388e9f07583671d46fa14" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-19 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-19 00:00:00<br>             <b>Location:</b> Border Post Bravo<br>             <b>Description:</b> Image showing troop withdrawal<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-19 00:00:00<br>             <b>Source:</b> International News<br>             <b>Title:</b> UN Calls for De-escalation<br>             <b>Summary:</b> The United Nations calls for de-escalation of tensions between Country A and Country B.         </div>`)[0];
+                popup_266212344c49dd734713da0300a0df27.setContent(html_a555c7edaa1388e9f07583671d46fa14);
+            
+        
+
+        marker_009a543acfc2cef56387b59729d3e89f.bindPopup(popup_266212344c49dd734713da0300a0df27)
+        ;
+
+        
+    
+    
+            var marker_0f5ddfa427718ea050084717eaedda6e = L.marker(
+                [28.705, 77.105],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_289465d601f11b162ec366b403bfad3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f5ddfa427718ea050084717eaedda6e.setIcon(icon_289465d601f11b162ec366b403bfad3c);
+        
+    
+        var popup_7713af0d2a379fa6834b0c50d4bbfcb7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_14839fbc99239d36a92fa53f839bda25 = $(`<div id="html_14839fbc99239d36a92fa53f839bda25" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-22 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-22 00:00:00<br>             <b>Location:</b> Border Post Bravo<br>             <b>Description:</b> Image showing new infrastructure developments<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-22 00:00:00<br>             <b>Source:</b> National Daily<br>             <b>Title:</b> Minor Skirmishes Reported<br>             <b>Summary:</b> Minor skirmishes reported at various points along the border between Country A and Country B.         </div>`)[0];
+                popup_7713af0d2a379fa6834b0c50d4bbfcb7.setContent(html_14839fbc99239d36a92fa53f839bda25);
+            
+        
+
+        marker_0f5ddfa427718ea050084717eaedda6e.bindPopup(popup_7713af0d2a379fa6834b0c50d4bbfcb7)
+        ;
+
+        
+    
+    
+            var marker_e4251a7bd4147e66be653990424377ba = L.marker(
+                [28.7051, 77.1052],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_346c569d0d7ed24ca3b0aebd2418e073 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4251a7bd4147e66be653990424377ba.setIcon(icon_346c569d0d7ed24ca3b0aebd2418e073);
+        
+    
+        var popup_0990805398afefc922eaf37c2278b512 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2534e349de33630e3f6486b171a64c08 = $(`<div id="html_2534e349de33630e3f6486b171a64c08" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-24 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-24 00:00:00<br>             <b>Location:</b> Border Post Bravo<br>             <b>Description:</b> High-resolution image showing vehicle movement<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-24 00:00:00<br>             <b>Source:</b> Defense Insider<br>             <b>Title:</b> Intelligence Reports on Border Movements<br>             <b>Summary:</b> Intelligence reports suggest possible coordinated movements by Country B near the border.         </div>`)[0];
+                popup_0990805398afefc922eaf37c2278b512.setContent(html_2534e349de33630e3f6486b171a64c08);
+            
+        
+
+        marker_e4251a7bd4147e66be653990424377ba.bindPopup(popup_0990805398afefc922eaf37c2278b512)
+        ;
+
+        
+    
+    
+            var marker_44de087219dfa3aad695f03423a2ccdd = L.marker(
+                [28.7052, 77.1055],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_a9d50182a390e9b6e90d936984d50de4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44de087219dfa3aad695f03423a2ccdd.setIcon(icon_a9d50182a390e9b6e90d936984d50de4);
+        
+    
+        var popup_fc4f3498377b4e9572f4adebffd44247 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_66952e58bdac42c5fe385541d989f43d = $(`<div id="html_66952e58bdac42c5fe385541d989f43d" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-27 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-27 00:00:00<br>             <b>Location:</b> Border Post Charlie<br>             <b>Description:</b> Image showing increased military presence<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-03-27 00:00:00<br>             <b>Source:</b> Border Watch<br>             <b>Title:</b> Unconfirmed Reports of Casualties<br>             <b>Summary:</b> Unconfirmed reports of casualties on both sides following a recent border clash.         </div>`)[0];
+                popup_fc4f3498377b4e9572f4adebffd44247.setContent(html_66952e58bdac42c5fe385541d989f43d);
+            
+        
+
+        marker_44de087219dfa3aad695f03423a2ccdd.bindPopup(popup_fc4f3498377b4e9572f4adebffd44247)
+        ;
+
+        
+    
+    
+            var marker_a24ccc7cd98b9ed1e3465171199e4fb5 = L.marker(
+                [28.7053, 77.1058],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_811ba71c479241c28b5bfd62f1138120 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a24ccc7cd98b9ed1e3465171199e4fb5.setIcon(icon_811ba71c479241c28b5bfd62f1138120);
+        
+    
+        var popup_93d3aef8a321a6e32b6232c41e3145c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3ba990a76d5334de133af84a1663bad = $(`<div id="html_e3ba990a76d5334de133af84a1663bad" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-03-29 00:00:00<br>             <b>Date (Geospatial):</b> 2024-03-29 00:00:00<br>             <b>Location:</b> Border Post Charlie<br>             <b>Description:</b> Image showing an empty area<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-03-29 00:00:00<br>             <b>Source:</b> National News A<br>             <b>Title:</b> Peace Talks Announced<br>             <b>Summary:</b> Both Country A and Country B agree to resume peace talks amid rising tensions.         </div>`)[0];
+                popup_93d3aef8a321a6e32b6232c41e3145c1.setContent(html_e3ba990a76d5334de133af84a1663bad);
+            
+        
+
+        marker_a24ccc7cd98b9ed1e3465171199e4fb5.bindPopup(popup_93d3aef8a321a6e32b6232c41e3145c1)
+        ;
+
+        
+    
+    
+            var marker_a53dac665316449686d860326901901c = L.marker(
+                [28.7054, 77.106],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_ce0a4cf4f66c211e7455023948f2f76f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a53dac665316449686d860326901901c.setIcon(icon_ce0a4cf4f66c211e7455023948f2f76f);
+        
+    
+        var popup_acf105d561d64cd3d406fae78ebe93df = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_23ced10d0f37b20b0387a892d91e1967 = $(`<div id="html_23ced10d0f37b20b0387a892d91e1967" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-01 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-01 00:00:00<br>             <b>Location:</b> Border Post Charlie<br>             <b>Description:</b> Image showing troop withdrawal<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-01 00:00:00<br>             <b>Source:</b> Global Security<br>             <b>Title:</b> Increase in Surveillance Along the Border<br>             <b>Summary:</b> Increased surveillance reported along the border between Country A and Country B.         </div>`)[0];
+                popup_acf105d561d64cd3d406fae78ebe93df.setContent(html_23ced10d0f37b20b0387a892d91e1967);
+            
+        
+
+        marker_a53dac665316449686d860326901901c.bindPopup(popup_acf105d561d64cd3d406fae78ebe93df)
+        ;
+
+        
+    
+    
+            var marker_2619ba827d7eca08fcf895012f24aa66 = L.marker(
+                [28.7055, 77.1063],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_e2dece820bb30dce68c1cea5f2c6bf08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2619ba827d7eca08fcf895012f24aa66.setIcon(icon_e2dece820bb30dce68c1cea5f2c6bf08);
+        
+    
+        var popup_11087573a8ee1c953e31e25ff6ae3b0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_77b904bf753fbf6d5be287618bb06ffe = $(`<div id="html_77b904bf753fbf6d5be287618bb06ffe" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-03 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-03 00:00:00<br>             <b>Location:</b> Border Post Charlie<br>             <b>Description:</b> Image showing new infrastructure developments<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-04-03 00:00:00<br>             <b>Source:</b> Border News<br>             <b>Title:</b> Cross-Border Infiltration Attempts Foiled<br>             <b>Summary:</b> Country A claims to have foiled infiltration attempts from Country B across the border.         </div>`)[0];
+                popup_11087573a8ee1c953e31e25ff6ae3b0b.setContent(html_77b904bf753fbf6d5be287618bb06ffe);
+            
+        
+
+        marker_2619ba827d7eca08fcf895012f24aa66.bindPopup(popup_11087573a8ee1c953e31e25ff6ae3b0b)
+        ;
+
+        
+    
+    
+            var marker_35c4a40e68129185d6e6c8977fec9eb9 = L.marker(
+                [28.7056, 77.1065],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_665073837fc10b4251b7999e9c45ca25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35c4a40e68129185d6e6c8977fec9eb9.setIcon(icon_665073837fc10b4251b7999e9c45ca25);
+        
+    
+        var popup_65cd7c4221229ddbc61de93a9258319d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9d3743a8d8c7bca222d1e6cb524a7626 = $(`<div id="html_9d3743a8d8c7bca222d1e6cb524a7626" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-05 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-05 00:00:00<br>             <b>Location:</b> Border Post Charlie<br>             <b>Description:</b> High-resolution image showing vehicle movement<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-05 00:00:00<br>             <b>Source:</b> International Times<br>             <b>Title:</b> Diplomatic Relations Strained<br>             <b>Summary:</b> Diplomatic relations between Country A and Country B are strained due to recent border incidents.         </div>`)[0];
+                popup_65cd7c4221229ddbc61de93a9258319d.setContent(html_9d3743a8d8c7bca222d1e6cb524a7626);
+            
+        
+
+        marker_35c4a40e68129185d6e6c8977fec9eb9.bindPopup(popup_65cd7c4221229ddbc61de93a9258319d)
+        ;
+
+        
+    
+    
+            var marker_c0b0299d67d11c1c644754803e0c6b75 = L.marker(
+                [28.7057, 77.1068],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_52a0bf6fc8993913e76a13d7ffe1c4cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0b0299d67d11c1c644754803e0c6b75.setIcon(icon_52a0bf6fc8993913e76a13d7ffe1c4cb);
+        
+    
+        var popup_8f95e75e4874911bb4280a945932815a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2765b15c9fbd804aae1d76b60b829d3c = $(`<div id="html_2765b15c9fbd804aae1d76b60b829d3c" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-07 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-07 00:00:00<br>             <b>Location:</b> Border Post Charlie<br>             <b>Description:</b> Image showing increased military presence<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-04-07 00:00:00<br>             <b>Source:</b> National News B<br>             <b>Title:</b> Border Infrastructure Development Accelerates<br>             <b>Summary:</b> Both countries accelerate infrastructure development near the border.         </div>`)[0];
+                popup_8f95e75e4874911bb4280a945932815a.setContent(html_2765b15c9fbd804aae1d76b60b829d3c);
+            
+        
+
+        marker_c0b0299d67d11c1c644754803e0c6b75.bindPopup(popup_8f95e75e4874911bb4280a945932815a)
+        ;
+
+        
+    
+    
+            var marker_963e69de50e453a80662018130c7289f = L.marker(
+                [28.7058, 77.107],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_95503d570e4206deb8477c0ee6d23905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_963e69de50e453a80662018130c7289f.setIcon(icon_95503d570e4206deb8477c0ee6d23905);
+        
+    
+        var popup_aec0e73dcb1a374755f35afc92e7c09e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7ebd24f101dbf67b136e7b54717fa80 = $(`<div id="html_c7ebd24f101dbf67b136e7b54717fa80" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-10 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-10 00:00:00<br>             <b>Location:</b> Border Post Delta<br>             <b>Description:</b> Image showing an empty area<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-10 00:00:00<br>             <b>Source:</b> Defense News<br>             <b>Title:</b> New Defense Installations Spotted<br>             <b>Summary:</b> Satellite imagery reveals new defense installations on both sides of the border.         </div>`)[0];
+                popup_aec0e73dcb1a374755f35afc92e7c09e.setContent(html_c7ebd24f101dbf67b136e7b54717fa80);
+            
+        
+
+        marker_963e69de50e453a80662018130c7289f.bindPopup(popup_aec0e73dcb1a374755f35afc92e7c09e)
+        ;
+
+        
+    
+    
+            var marker_b9cb6fe94f105d3159f39950e52031ae = L.marker(
+                [28.7059, 77.1073],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_80073ad9d51ae1a2ae8f75083814c720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9cb6fe94f105d3159f39950e52031ae.setIcon(icon_80073ad9d51ae1a2ae8f75083814c720);
+        
+    
+        var popup_44e0242584e1002cb636fc4b9652792d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7f56f61eb47e556ee5e23bcb684a82a5 = $(`<div id="html_7f56f61eb47e556ee5e23bcb684a82a5" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-12 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-12 00:00:00<br>             <b>Location:</b> Border Post Delta<br>             <b>Description:</b> Image showing troop withdrawal<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-04-12 00:00:00<br>             <b>Source:</b> Global Times<br>             <b>Title:</b> Ceasefire Violations Increase<br>             <b>Summary:</b> Reports indicate an increase in ceasefire violations along the border between Country A and Country B.         </div>`)[0];
+                popup_44e0242584e1002cb636fc4b9652792d.setContent(html_7f56f61eb47e556ee5e23bcb684a82a5);
+            
+        
+
+        marker_b9cb6fe94f105d3159f39950e52031ae.bindPopup(popup_44e0242584e1002cb636fc4b9652792d)
+        ;
+
+        
+    
+    
+            var marker_34954fc73412aee9e6df669335df2e76 = L.marker(
+                [28.706, 77.1075],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_21bbe8501509b56a900e200cd82e9672 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34954fc73412aee9e6df669335df2e76.setIcon(icon_21bbe8501509b56a900e200cd82e9672);
+        
+    
+        var popup_a08b564e436e236b6a621be006c975fd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f7dbcbe0ecaa032a612f4185812d73a3 = $(`<div id="html_f7dbcbe0ecaa032a612f4185812d73a3" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-15 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-15 00:00:00<br>             <b>Location:</b> Border Post Delta<br>             <b>Description:</b> Image showing new infrastructure developments<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-15 00:00:00<br>             <b>Source:</b> National Daily<br>             <b>Title:</b> Local Protests Erupt in Border Villages<br>             <b>Summary:</b> Protests erupt in border villages as local populations demand security and stability.         </div>`)[0];
+                popup_a08b564e436e236b6a621be006c975fd.setContent(html_f7dbcbe0ecaa032a612f4185812d73a3);
+            
+        
+
+        marker_34954fc73412aee9e6df669335df2e76.bindPopup(popup_a08b564e436e236b6a621be006c975fd)
+        ;
+
+        
+    
+    
+            var marker_798cb2c017cf62180af46452a760ffc0 = L.marker(
+                [28.7061, 77.1078],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_41b0b4ed0725265cbb39e3cdff1d9773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_798cb2c017cf62180af46452a760ffc0.setIcon(icon_41b0b4ed0725265cbb39e3cdff1d9773);
+        
+    
+        var popup_1a8f813372740af221b830448b578a63 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a215e4f552686f0df59bc81855cd52ce = $(`<div id="html_a215e4f552686f0df59bc81855cd52ce" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-17 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-17 00:00:00<br>             <b>Location:</b> Border Post Delta<br>             <b>Description:</b> High-resolution image showing vehicle movement<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-04-17 00:00:00<br>             <b>Source:</b> Defense Insider<br>             <b>Title:</b> Border Tensions Show No Signs of Abating<br>             <b>Summary:</b> Despite ongoing talks, border tensions show no signs of abating.         </div>`)[0];
+                popup_1a8f813372740af221b830448b578a63.setContent(html_a215e4f552686f0df59bc81855cd52ce);
+            
+        
+
+        marker_798cb2c017cf62180af46452a760ffc0.bindPopup(popup_1a8f813372740af221b830448b578a63)
+        ;
+
+        
+    
+    
+            var marker_e03f67598628bd1126aeab9f962251a4 = L.marker(
+                [28.7062, 77.108],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_8f7529962517c10cf560d6c5a955c912 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e03f67598628bd1126aeab9f962251a4.setIcon(icon_8f7529962517c10cf560d6c5a955c912);
+        
+    
+        var popup_560b944cd4fe340f39157d860119bd41 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_06243e9ba3bf71a050828a5c347e6a2e = $(`<div id="html_06243e9ba3bf71a050828a5c347e6a2e" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-19 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-19 00:00:00<br>             <b>Location:</b> Border Post Delta<br>             <b>Description:</b> Image showing increased military presence<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-19 00:00:00<br>             <b>Source:</b> International News<br>             <b>Title:</b> Humanitarian Aid Sent to Border Areas<br>             <b>Summary:</b> Humanitarian aid sent to affected border areas as tensions continue to rise.         </div>`)[0];
+                popup_560b944cd4fe340f39157d860119bd41.setContent(html_06243e9ba3bf71a050828a5c347e6a2e);
+            
+        
+
+        marker_e03f67598628bd1126aeab9f962251a4.bindPopup(popup_560b944cd4fe340f39157d860119bd41)
+        ;
+
+        
+    
+    
+            var marker_b24ef54e4c6d7e69d46bd73182fe5e43 = L.marker(
+                [28.7063, 77.1083],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_db3dca4f75eac385cee7ee3f92120cd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b24ef54e4c6d7e69d46bd73182fe5e43.setIcon(icon_db3dca4f75eac385cee7ee3f92120cd1);
+        
+    
+        var popup_578cfb557d416d98aeca35213d64ca33 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07f46abcf6a74c81f39382e9e5903de5 = $(`<div id="html_07f46abcf6a74c81f39382e9e5903de5" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-22 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-22 00:00:00<br>             <b>Location:</b> Border Post Delta<br>             <b>Description:</b> Image showing an empty area<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-04-22 00:00:00<br>             <b>Source:</b> National News A<br>             <b>Title:</b> Security Forces on High Alert<br>             <b>Summary:</b> Security forces in Country A and Country B are placed on high alert.         </div>`)[0];
+                popup_578cfb557d416d98aeca35213d64ca33.setContent(html_07f46abcf6a74c81f39382e9e5903de5);
+            
+        
+
+        marker_b24ef54e4c6d7e69d46bd73182fe5e43.bindPopup(popup_578cfb557d416d98aeca35213d64ca33)
+        ;
+
+        
+    
+    
+            var marker_896127f5a29c5851b87623f4ad50b808 = L.marker(
+                [28.7064, 77.1085],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_81d1796039ba8c8c2be69be09dc1b7fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_896127f5a29c5851b87623f4ad50b808.setIcon(icon_81d1796039ba8c8c2be69be09dc1b7fa);
+        
+    
+        var popup_40f5f6cf638d127c60217b7b9e4de717 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_30e15ff96d8fbaebb18f11d2f278f2a1 = $(`<div id="html_30e15ff96d8fbaebb18f11d2f278f2a1" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-24 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-24 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> Image showing troop withdrawal<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-24 00:00:00<br>             <b>Source:</b> Global Security<br>             <b>Title:</b> Border Clash Results in Casualties<br>             <b>Summary:</b> A recent border clash has resulted in casualties on both sides.         </div>`)[0];
+                popup_40f5f6cf638d127c60217b7b9e4de717.setContent(html_30e15ff96d8fbaebb18f11d2f278f2a1);
+            
+        
+
+        marker_896127f5a29c5851b87623f4ad50b808.bindPopup(popup_40f5f6cf638d127c60217b7b9e4de717)
+        ;
+
+        
+    
+    
+            var marker_d78e1db14635715b07538c235ba343c4 = L.marker(
+                [28.7065, 77.1088],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_98d9ba8431ccfc220f91b63fbfdda335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d78e1db14635715b07538c235ba343c4.setIcon(icon_98d9ba8431ccfc220f91b63fbfdda335);
+        
+    
+        var popup_0ce60c1f810f1ba8424169bc672f3d78 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8ee6c6623768c65407e2a7a845258a5 = $(`<div id="html_e8ee6c6623768c65407e2a7a845258a5" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-27 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-27 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> Image showing new infrastructure developments<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-04-27 00:00:00<br>             <b>Source:</b> Border Watch<br>             <b>Title:</b> Surveillance Drones Deployed<br>             <b>Summary:</b> Surveillance drones have been deployed along the border by both countries.         </div>`)[0];
+                popup_0ce60c1f810f1ba8424169bc672f3d78.setContent(html_e8ee6c6623768c65407e2a7a845258a5);
+            
+        
+
+        marker_d78e1db14635715b07538c235ba343c4.bindPopup(popup_0ce60c1f810f1ba8424169bc672f3d78)
+        ;
+
+        
+    
+    
+            var marker_7b7ccde16cea24b47b3f10e9f3ca4a8c = L.marker(
+                [28.7066, 77.109],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_373601c330eb21ac1fad20187489faba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b7ccde16cea24b47b3f10e9f3ca4a8c.setIcon(icon_373601c330eb21ac1fad20187489faba);
+        
+    
+        var popup_c87c0f40b1964270778efbec700da1ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c33e8ffda820185325a9f963ec142ee7 = $(`<div id="html_c33e8ffda820185325a9f963ec142ee7" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-04-29 00:00:00<br>             <b>Date (Geospatial):</b> 2024-04-29 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> High-resolution image showing vehicle movement<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-04-29 00:00:00<br>             <b>Source:</b> International Times<br>             <b>Title:</b> Intelligence Sharing Agreed Upon<br>             <b>Summary:</b> Country A and Country B agree to share intelligence to prevent further escalation.         </div>`)[0];
+                popup_c87c0f40b1964270778efbec700da1ea.setContent(html_c33e8ffda820185325a9f963ec142ee7);
+            
+        
+
+        marker_7b7ccde16cea24b47b3f10e9f3ca4a8c.bindPopup(popup_c87c0f40b1964270778efbec700da1ea)
+        ;
+
+        
+    
+    
+            var marker_923908e59ffb29a229e2178b576d80f4 = L.marker(
+                [28.7067, 77.1093],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_d532db7e214d3ae0839af8ff32709a8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_923908e59ffb29a229e2178b576d80f4.setIcon(icon_d532db7e214d3ae0839af8ff32709a8b);
+        
+    
+        var popup_abe85841aadc8378ad011c040ce7c394 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_888c04cce4d517c4cb770209ce269e47 = $(`<div id="html_888c04cce4d517c4cb770209ce269e47" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-05-02 00:00:00<br>             <b>Date (Geospatial):</b> 2024-05-02 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> Image showing increased military presence<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-05-02 00:00:00<br>             <b>Source:</b> National Daily<br>             <b>Title:</b> Reports of Cross-Border Shelling<br>             <b>Summary:</b> Reports indicate cross-border shelling in disputed areas.         </div>`)[0];
+                popup_abe85841aadc8378ad011c040ce7c394.setContent(html_888c04cce4d517c4cb770209ce269e47);
+            
+        
+
+        marker_923908e59ffb29a229e2178b576d80f4.bindPopup(popup_abe85841aadc8378ad011c040ce7c394)
+        ;
+
+        
+    
+    
+            var marker_0e2de2e13744f1bc8ac922b9f98c2052 = L.marker(
+                [28.7068, 77.1095],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_5a50439d97497c67b3f26d28a0b66738 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e2de2e13744f1bc8ac922b9f98c2052.setIcon(icon_5a50439d97497c67b3f26d28a0b66738);
+        
+    
+        var popup_3bda34d84fb5a7a6669258b097090602 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5562ca007feae6492736e425e9ffbc71 = $(`<div id="html_5562ca007feae6492736e425e9ffbc71" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-05-04 00:00:00<br>             <b>Date (Geospatial):</b> 2024-05-04 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> Image showing an empty area<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-05-04 00:00:00<br>             <b>Source:</b> Border News<br>             <b>Title:</b> Military Buildup Continues<br>             <b>Summary:</b> The military buildup continues on both sides of the border despite calls for de-escalation.         </div>`)[0];
+                popup_3bda34d84fb5a7a6669258b097090602.setContent(html_5562ca007feae6492736e425e9ffbc71);
+            
+        
+
+        marker_0e2de2e13744f1bc8ac922b9f98c2052.bindPopup(popup_3bda34d84fb5a7a6669258b097090602)
+        ;
+
+        
+    
+    
+            var marker_dd78150915a74c10c3b300d618aa48c3 = L.marker(
+                [28.7069, 77.1098],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_0f6d0f9e1011231057b6a1fa4b75d6a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd78150915a74c10c3b300d618aa48c3.setIcon(icon_0f6d0f9e1011231057b6a1fa4b75d6a8);
+        
+    
+        var popup_d1e16577c3ec0c2ce731381b2168c176 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_117a22ef6fcdfe363d157e0f4fd8d290 = $(`<div id="html_117a22ef6fcdfe363d157e0f4fd8d290" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-05-07 00:00:00<br>             <b>Date (Geospatial):</b> 2024-05-07 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> Image showing troop withdrawal<br>             <b>Movement Type:</b> Exit<br>             <b>Country:</b> Country B<br>             <b>Date (News):</b> 2024-05-07 00:00:00<br>             <b>Source:</b> Global Times<br>             <b>Title:</b> Peacekeeping Forces on Standby<br>             <b>Summary:</b> International peacekeeping forces are on standby in case of further escalation.         </div>`)[0];
+                popup_d1e16577c3ec0c2ce731381b2168c176.setContent(html_117a22ef6fcdfe363d157e0f4fd8d290);
+            
+        
+
+        marker_dd78150915a74c10c3b300d618aa48c3.bindPopup(popup_d1e16577c3ec0c2ce731381b2168c176)
+        ;
+
+        
+    
+    
+            var marker_439dafd100546ff7c0f9dbf5b3f80079 = L.marker(
+                [28.707, 77.11],
+                {}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+        
+    
+            var icon_3deb27b6cab39dd4c2df76d9eceebd30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_439dafd100546ff7c0f9dbf5b3f80079.setIcon(icon_3deb27b6cab39dd4c2df76d9eceebd30);
+        
+    
+        var popup_d4b03716efd88d433ee0268ecadc2d10 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7df3c43b6de411cfa347db64e94faf97 = $(`<div id="html_7df3c43b6de411cfa347db64e94faf97" style="width: 100.0%; height: 100.0%;">             <b>Date (Satellite):</b> 2024-05-09 00:00:00<br>             <b>Date (Geospatial):</b> 2024-05-09 00:00:00<br>             <b>Location:</b> Border Post Echo<br>             <b>Description:</b> Image showing new infrastructure developments<br>             <b>Movement Type:</b> Entry<br>             <b>Country:</b> Country A<br>             <b>Date (News):</b> 2024-05-09 00:00:00<br>             <b>Source:</b> Defense Insider<br>             <b>Title:</b> Satellite Imagery Shows New Military Movements<br>             <b>Summary:</b> Latest satellite imagery shows new military movements near the border.         </div>`)[0];
+                popup_d4b03716efd88d433ee0268ecadc2d10.setContent(html_7df3c43b6de411cfa347db64e94faf97);
+            
+        
+
+        marker_439dafd100546ff7c0f9dbf5b3f80079.bindPopup(popup_d4b03716efd88d433ee0268ecadc2d10)
+        ;
+
+        
+    
+    
+            var layer_control_a8646c60401a9c3dd9d2ef929e67693d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_01b992b6fbcc7610c1d71c49b4b4351a,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a8646c60401a9c3dd9d2ef929e67693d = L.control.layers(
+                layer_control_a8646c60401a9c3dd9d2ef929e67693d_layers.base_layers,
+                layer_control_a8646c60401a9c3dd9d2ef929e67693d_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_4df03d624fa23f382d4208613f72dc46);
+
+        
+</script>
+</html>
